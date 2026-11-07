@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Aditya Kashyap | Mechanical Engineer</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--p:#17171a;--ink:#ece7d9;--acc:#ff5a2b;--mut:#9b968a;--ln:rgba(236,231,217,.65)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:Archivo,system-ui,sans-serif;background:var(--p);color:var(--ink);line-height:1.6;overflow-x:hidden}
+#bg{position:fixed;inset:0;z-index:0}
+.w{position:relative;z-index:1;max-width:1080px;margin:0 auto;padding:0 18px}
+.m{font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--mut)}
+a{color:inherit}
+.tb{display:grid;grid-template-columns:2fr 1.2fr .6fr .6fr;border:2px solid var(--ln);background:rgba(23,23,26,.9);margin-top:18px}
+.tb div{padding:8px 12px;border-right:1px solid var(--ln)}.tb div:last-child{border:0}
+.tb b{display:block;font-size:1.05rem}
+.hero{min-height:82vh;display:flex;flex-direction:column;justify-content:center}
+h1{font-size:clamp(2.4rem,7.5vw,5.4rem);line-height:.98;letter-spacing:-.04em;font-weight:800;max-width:11em}
+h1 em{font-style:normal;color:var(--acc)}
+.lead{max-width:540px;margin:20px 0;color:#cfc9ba}
+.row{display:flex;flex-wrap:wrap;gap:10px}
+.btn{border:2px solid var(--ink);padding:10px 18px;font-weight:700;text-decoration:none;background:var(--p);transition:.2s}
+.btn.f{background:var(--ink);color:var(--p)}.btn:hover{background:var(--acc);border-color:var(--acc);color:#fff;transform:translate(-3px,-3px);box-shadow:3px 3px 0 var(--ink)}
+section{padding:60px 0}
+h2{font-size:1.9rem;letter-spacing:-.02em;display:flex;align-items:center;gap:14px;margin-bottom:22px}
+h2::after{content:"";flex:1;border-top:2px solid var(--ln)}
+.sec{background:rgba(23,23,26,.9);border:2px solid var(--ln);padding:22px}
+.ab{display:grid;grid-template-columns:150px 1fr;gap:22px;align-items:start}
+.av{width:150px;height:150px;border:2px solid var(--ink);object-fit:cover;display:grid;place-items:center;font-weight:800;font-size:2.4rem;background:#26262a}
+.sheet{position:relative;background:rgba(23,23,26,.9);border:2px solid var(--ln);padding:22px 22px 22px 84px;margin-bottom:18px;transition:.25s}
+.sheet:hover{transform:translate(-4px,-4px);box-shadow:5px 5px 0 var(--ink)}
+.sheet .n{position:absolute;left:0;top:0;bottom:0;width:62px;border-right:1px solid var(--ln);display:grid;place-items:center;font-family:'IBM Plex Mono';font-size:1.5rem;font-weight:500;color:var(--acc)}
+.sheet h3{font-size:1.25rem;line-height:1.25;margin:2px 0 6px}
+.sheet p{color:#cfc9ba;margin:6px 0}
+.st{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:12px 0}
+.st div{border:1px dashed var(--ln);padding:10px}.st b{display:block;font-size:1.5rem;color:var(--acc);letter-spacing:-.03em}
+.sk{display:flex;flex-wrap:wrap;gap:8px}.sk span{border:1.5px solid var(--ink);padding:4px 12px;font-family:'IBM Plex Mono';font-size:.8rem;background:var(--p)}
+.media{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin:16px 0}.media figure{border:1.5px solid var(--ln);background:#fff}.media img{width:100%;display:block}.media figcaption{background:var(--p);color:var(--mut);font-family:'IBM Plex Mono';font-size:.68rem;padding:6px 10px;border-top:1px solid var(--ln);text-transform:uppercase;letter-spacing:.06em}
+.tw{overflow-x:auto;margin:10px 0}table{border-collapse:collapse;width:100%;min-width:560px;font-size:.92rem}th,td{border:1px solid var(--ln);padding:8px 10px;text-align:left}th{font-family:'IBM Plex Mono';font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:var(--mut);font-weight:400}.good{color:#8be28b;font-weight:700}.bad{color:#ff7a6b;font-weight:700}
+.two{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}ul.cl{padding-left:18px;color:#cfc9ba}ul.cl li{margin:4px 0}h4{font-family:'IBM Plex Mono';font-size:.76rem;letter-spacing:.08em;text-transform:uppercase;color:var(--acc);margin:16px 0 6px}
+footer{position:relative;z-index:1;text-align:center;padding:30px;border-top:2px solid var(--ln);background:var(--p)}
+.r{opacity:0;transform:translateY(22px);transition:.7s}.r.in{opacity:1;transform:none}
+@media(max-width:640px){.tb{grid-template-columns:1fr 1fr}.tb div:nth-child(2){border-right:0}.tb div{border-bottom:1px solid var(--ln)}.ab{grid-template-columns:1fr}.sheet{padding:22px 16px 16px 16px;padding-top:56px}.sheet .n{width:100%;height:42px;bottom:auto;border-right:0;border-bottom:1px solid var(--ln);justify-content:start;padding-left:16px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}.r{opacity:1;transform:none}}
+</style></head><body>
+<canvas id="bg"></canvas>
+<div class="w">
+ <header class="tb"><div><span class="m">Drawing title</span><b>ADITYA KASHYAP</b></div><div><span class="m">Discipline</span><b>Mech · Aero</b></div><div><span class="m">Scale</span><b>1:1</b></div><div><span class="m">Sheet</span><b>01/04</b></div></header>
+ <div class="hero">
+  <span class="m">// mechanical engineer · gas turbine MRO · controls</span>
+  <h1>Mechanical engineering for <em>aerospace systems</em>.</h1>
+  <p class="lead">Hands-on overhaul experience on turboshaft engines, now working on Airbus programs, and building simulation projects toward aerospace and space systems.</p>
+  <div class="row"><a class="btn f" href="#projects">View projects</a><a class="btn" href="mailto:kashyapaditya0912@gmail.com">Email me</a><a class="btn" href="https://www.linkedin.com/in/aditya-kashyap-b93141292" target="_blank">LinkedIn</a></div>
+ </div>
+ <section id="about" class="r"><h2>About</h2><div class="sec ab">
+  <img class="av" src="pic1.jpeg" alt="Aditya Kashyap" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'av',textContent:'AK'}))">
+  <div><p>Mechanical engineer with hands-on experience in the overhaul of gas turbine engines, focused on turboshaft maintenance and repair. I'm drawn to mechanical design, CFD, FEA and control theory, and I use simulation to improve performance and reliability.</p><p style="margin-top:10px">My undergraduate capstone used glass-fibre reinforced polymers to build a scaled sluice gate. I've also implemented control algorithms in simulation and on hardware.</p></div></div></section>
+ <section id="projects"><h2>Projects</h2>
+  <article class="sheet r"><div class="n">01</div><span class="m">C++ · Python · Raspberry Pi · MATLAB · BambuLab</span><h3>Nonlinear Speed and Position Control of Direct-Drive Motor Systems</h3><p>Implemented the Generalized Adaptive Super-Saturated Twisting Algorithm (GASSTA), a second-order sliding mode strategy, for speed and position control of direct-drive BLDC motors, robust to model uncertainty, disturbances and input saturation.</p><a class="btn" href="#">Know more</a></article>
+  <article class="sheet r" id="landing-gear"><div class="n">02</div><span class="m">Python · NumPy · SciPy · Matplotlib</span>
+<h3>Landing Gear Dynamics: designing a main-gear strut for off-design landings</h3>
+<p>A 1-DOF model of an oleo-pneumatic main gear (nonlinear gas spring, quadratic orifice damping, hard stop). Three designs were compared at the design landing, then stress-tested with off-design scenarios and a 120-case Monte Carlo study over sink speed, lift, mass and gas charge.</p>
+<div class="st"><div><b>0.002%</b><span class="m">energy-balance error</span></div><div><b>19%</b><span class="m">random landings bottom out design C</span></div><div><b>112 kN</b><span class="m">95th-percentile load, design B</span></div></div>
+<div class="media">
+<figure><img src="assets/landing_gear_animation.gif" alt="Animation of three landing gear designs at touchdown" onerror="this.parentNode.style.display='none'"><figcaption>Three designs at touchdown (slowed about 8x)</figcaption></figure>
+<figure><img src="assets/3_robustness.png" alt="Robustness study" onerror="this.parentNode.style.display='none'"><figcaption>Peak force, stroke margin and Monte Carlo</figcaption></figure>
+<figure><img src="assets/1_design_comparison.png" alt="Design comparison" onerror="this.parentNode.style.display='none'"><figcaption>Force vs stroke, load vs time, damping profile</figcaption></figure>
+<figure><img src="assets/2_energy_accounting.png" alt="Energy accounting" onerror="this.parentNode.style.display='none'"><figcaption>Energy accounting and force components</figcaption></figure></div>
+<h4>Peak strut force (kN)</h4>
+<div class="tw"><table><tr><th>Scenario</th><th>A: fixed orifice</th><th>B: metering pin</th><th>C: pin + longer gas column</th></tr><tr><td>Design landing, 3.0 m/s</td><td>92.0</td><td>79.7</td><td class="good">68.7</td></tr><tr><td>Hard landing, 3.7 m/s</td><td>134.9</td><td>110.6</td><td class="good">93.9 (97% of stroke)</td></tr><tr><td>Harder landing, 4.0 m/s</td><td>160.6</td><td class="good">125.9</td><td class="bad">130.3, bottoms out</td></tr><tr><td>Lift only 67% of weight</td><td>121.2</td><td>100.9</td><td class="good">90.1 (96% of stroke)</td></tr><tr><td>Gas charge 40% low</td><td>89.5</td><td>71.6</td><td class="good">60.6 (100% of stroke)</td></tr><tr><td>Monte Carlo, 95th percentile</td><td class="">147.9</td><td class="good">111.9</td><td class="bad">152.7</td></tr><tr><td>Monte Carlo, bottoming-out probability</td><td class="good">0.0%</td><td class="good">0.0%</td><td class="bad">19.2%</td></tr></table></div>
+<div class="two"><div><h4>Findings</h4><ul class="cl"><li>A metering pin and a softer gas spring both reduce peak load, but the softer spring spends stroke margin.</li><li>Design C has the lowest load at the design point, yet it bottoms out in about 1 in 5 random landings. Design B is the robust choice.</li><li>Judging designs at a single operating point can select the wrong design.</li></ul></div>
+<div><h4>Limitations</h4><ul class="cl"><li>Parameters are illustrative and not validated against drop-test data.</li><li>One degree of freedom: no tyre or wheel mass, constant lift, no friction or thermal effects.</li><li>Rebound is simplified, so the model rebounds at about 2 m/s.</li></ul></div></div>
+<a class="btn" href="#">GitHub repository</a></article>
+  <article class="sheet r"><div class="n">03</div><span class="m">SolidWorks · Ansys · MATLAB</span><h3>Design and Fabrication of a Fibre Reinforced Polymer Composite Sluice Gate</h3><p>Designed and fabricated a glass-fibre composite sluice gate for structural efficiency and corrosion resistance. Tested it experimentally and used ANSYS Mechanical and ACP to study stress distribution and optimise the layup.</p><a class="btn" href="#">Know more</a></article>
+ </section>
+ <section class="r"><h2>Skills</h2><div class="sk"><span>ANSYS Fluent</span><span>ANSYS Mechanical</span><span>CFD-Post</span><span>SolidWorks</span><span>CATIA</span><span>MATLAB</span><span>Simulink</span><span>Python</span><span>FEA</span><span>CFD</span></div></section>
+</div>
+<footer><span class="m">© <span id="y"></span> Aditya Kashyap · kashyapaditya0912@gmail.com</span></footer>
+<script>
+const cv=document.getElementById('bg'),c=cv.getContext('2d'),still=matchMedia('(prefers-reduced-motion: reduce)').matches;
+let W,H,mx=-1,my=-1;const fine=matchMedia('(pointer:fine)').matches;
+function sz(){W=cv.width=innerWidth;H=cv.height=innerHeight}
+function gear(x,y,r,t,a){const ro=r,ri=r*.84,w=Math.PI/t;c.beginPath();
+ for(let i=0;i<t;i++){const b=a+i*2*w;c.lineTo(x+ri*Math.cos(b-w/2),y+ri*Math.sin(b-w/2));c.lineTo(x+ro*Math.cos(b-w/4),y+ro*Math.sin(b-w/4));c.lineTo(x+ro*Math.cos(b+w/4),y+ro*Math.sin(b+w/4));c.lineTo(x+ri*Math.cos(b+w/2),y+ri*Math.sin(b+w/2));c.arc(x,y,ri,b+w/2,b+1.5*w)}
+ c.closePath();c.stroke();c.beginPath();c.arc(x,y,r*.22,0,7);c.stroke();c.beginPath();c.arc(x,y,r*.6,0,7);c.setLineDash([2,6]);c.stroke();c.setLineDash([])}
+function frame(t){c.clearRect(0,0,W,H);
+ c.strokeStyle='rgba(236,231,217,.07)';c.lineWidth=1;c.beginPath();for(let x=0;x<W;x+=32){c.moveTo(x,0);c.lineTo(x,H)}for(let y=0;y<H;y+=32){c.moveTo(0,y);c.lineTo(W,y)}c.stroke();
+ const s=Math.min(W,H),r1=s*(W<700?.2:.24),t1=20,t2=12,r2=r1*.6,x1=W*(W<700?.72:.8),y1=H*.34,a1=(still?0:t*.0004)+scrollY*.002;
+ const d=.92*(r1+r2),a2=Math.PI+Math.PI/t2-a1*t1/t2;
+ c.strokeStyle='rgba(236,231,217,.34)';c.lineWidth=1.4;gear(x1,y1,r1,t1,a1);gear(x1+d,y1,r2,t2,a2);
+ c.strokeStyle='rgba(255,90,43,.55)';c.setLineDash([14,4,2,4]);c.beginPath();c.moveTo(x1-r1*1.2,y1);c.lineTo(x1+d+r2*1.2,y1);c.moveTo(x1,y1-r1*1.2);c.lineTo(x1,y1+r1*1.2);c.stroke();c.setLineDash([]);
+ c.fillStyle='rgba(236,231,217,.55)';c.font='11px IBM Plex Mono';c.fillText('Z=20',x1-14,y1+r1*1.3);c.fillText('Z=12',x1+d-14,y1+r2*1.5);
+ if(fine&&mx>=0){c.strokeStyle='rgba(255,90,43,.5)';c.setLineDash([4,4]);c.beginPath();c.moveTo(mx,0);c.lineTo(mx,H);c.moveTo(0,my);c.lineTo(W,my);c.stroke();c.setLineDash([]);c.fillStyle='#ff5a2b';c.fillText(`X ${mx|0}  Y ${my|0}`,mx+8,my-8)}
+ if(!still)requestAnimationFrame(frame)}
+addEventListener('pointermove',e=>{mx=e.clientX;my=e.clientY;if(still)frame(0)});addEventListener('resize',()=>{sz();if(still)frame(0)});addEventListener('scroll',()=>{if(still)frame(0)});
+sz();requestAnimationFrame(frame);
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1});document.querySelectorAll('.r').forEach(e=>io.observe(e));
+document.getElementById('y').textContent=new Date().getFullYear();
+</script></body></html>
